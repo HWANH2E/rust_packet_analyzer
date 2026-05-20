@@ -1,0 +1,17 @@
+[package]
+name = "packet-analyzer"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+
+[dependencies]
+packet-analyzer-capture = { path = "../capture" }
+packet-analyzer-core = { path = "../core" }
+
+[[bin]]
+name = "packet-analyzer"
+path = "src/main.rs"
+
+[lints]
+workspace = true
