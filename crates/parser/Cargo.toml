@@ -1,0 +1,15 @@
+[package]
+name = "packet-analyzer-parser"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+
+[dependencies]
+packet-analyzer-core = { path = "../core" }
+
+[lib]
+path = "src/lib.rs"
+
+[lints]
+workspace = true
